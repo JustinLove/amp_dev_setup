@@ -1,0 +1,17 @@
+source "http://rubygems.org"
+source "http://gems.github.com"
+
+#gem 'amp-front', '>= 0.1.0'
+gem 'amp-front', :path => '../amp_complete/amp-front'
+#gem 'amp-core', '>= 0.1.0'
+gem 'amp-core', :path => '../amp_complete/amp-core'
+gem 'rugged', '0.1.2'
+
+group :development do
+  gem 'rspec', '~> 2.2.0'
+  gem 'yard'
+  gem 'cucumber'
+  gem 'devver-construct', :require => 'construct'
+  gem 'minitest'
+  gem 'amp_repo_spec', :path => '../amp_repo_spec'
+end
